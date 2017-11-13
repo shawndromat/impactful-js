@@ -1,0 +1,21 @@
+{
+  "name": "Impactful",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "A tool for qualitatively contextualizing quantitative data in the news",
+  "icons": {
+    "16": "icons/icon_16.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["bundle.js"]
+  },
+  "permissions": ["http://*.google.com/", "https://*.google.com/"],
+  "browser_action": {
+    "default_title": "",
+    "default_icon": "icons/icon_16.png",
+    "default_popup": "index.html"
+  }
+}

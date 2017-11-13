@@ -1,4 +1,6 @@
 import findUsaCityByPopulation from './findUsaCityByPopulation'
 
 const location = findUsaCityByPopulation(400000)
-console.log(`${location.city}, ${location.state}`)
+const locationString = `${location.city}, ${location.state}`
+console.log(locationString)
+document.getElementById('answer').innerHTML = locationString
