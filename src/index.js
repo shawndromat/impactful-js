@@ -1,6 +1,11 @@
 import findUsaCityByPopulation from './findUsaCityByPopulation'
 
-const location = findUsaCityByPopulation(400000)
-const locationString = `${location.city}, ${location.state}`
-console.log(locationString)
-document.getElementById('answer').innerHTML = locationString
+const form = document.getElementById('number-form')
+const numberInput = document.getElementById('number-input')
+const answerDiv = document.getElementById('answer')
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+  const location = findUsaCityByPopulation(numberInput.value)
+  answerDiv.innerHTML = `${location.city}, ${location.state}`
+})
