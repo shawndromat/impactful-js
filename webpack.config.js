@@ -2,10 +2,13 @@ let path = require('path')
 let CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-  entry: ['./src/index.js'],
+  entry: {
+    background: './src/background.js',
+    content: './src/content.js'
+  },
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
   resolve: {
     extensions: ['.js']
@@ -27,7 +30,7 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin([
-      { from: path.resolve(__dirname, 'static'), to: path.resolve(__dirname, 'build') }
+      {from: path.resolve(__dirname, 'static'), to: path.resolve(__dirname, 'build')}
     ])
   ]
 }
