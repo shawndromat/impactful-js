@@ -1,5 +1,5 @@
-import paragraphProcessor from './paragraphProcessor'
-import { flatMap } from 'lodash'
+import paragraphProcessor from 'src/paragraphProcessor'
+import flatMap from 'lodash.flatmap'
 
 console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
 

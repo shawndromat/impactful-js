@@ -1,9 +1,8 @@
-import usaCities from './data/usaCities.json'
-import {first, last} from 'lodash'
+import usaCities from 'src/data/usaCities.json'
 
-export default function findUsaCityByPopulation (numPeople) {
-  const largestCity = first(usaCities)
-  const smallestCity = last(usaCities)
+export default function index (numPeople) {
+  const largestCity = usaCities[0]
+  const smallestCity = usaCities[usaCities.length - 1]
 
   if (numPeople <= smallestCity.population) {
     return smallestCity

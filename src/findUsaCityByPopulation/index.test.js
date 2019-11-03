@@ -1,4 +1,4 @@
-import findUsaCityByPopulation from '../src/findUsaCityByPopulation'
+import findUsaCityByPopulation from 'src/findUsaCityByPopulation/findUsaCityByPopulation'
 
 describe('findUsaCityByPopulation', () => {
   let location

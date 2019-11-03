@@ -1,4 +1,4 @@
-import findUsaCityByPopulation from './findUsaCityByPopulation'
+import findUsaCityByPopulation from 'src/findUsaCityByPopulation'
 
 const form = document.getElementById('number-form')
 const numberInput = document.getElementById('number-input')
