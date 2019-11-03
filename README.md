@@ -9,3 +9,20 @@ One day in late 2016, I was sitting in Atlanta reading a news article about the 
 I realized it can be so easy to gloss over bits like that in the news because those people are so far away and all lumped in to one number. But the impact if so much greater if you re-evaluate that number in terms of the people and places you know.
 
 So I decided to make this tool to help ground detached facts and figures in the reader's reality. To humanize, localize and contextualize numbers like this in news articles and make world events more relatable.
+
+### Experience
+
+My first MVP on this project is to have a chrome extension which will be active on major news sites. When figures about a certain number of people (e.g. "180,000 people have been evacuated due to California wildfires"), a dialog will pop up, saying which U.S. city that number is closest too.
+
+**Future possible features**:
+- adding datatsets other than U.S. cities, particularly covering numbers of people both much smaller and much larger
+- providing localized data, e.g. comparing to municipalities which are closer to the user and hopefully provide more personal context
+- more sophisticated text processing and detection of relevant numbers
+- processing data other than people
+- data visualization
+
+### Development
+
+This first iteration is keeping to figures about people, and comparing numbers to only one small dataset, U.S. cities. The idea is to keep a narrow view on what kind of data to look at so I can focus on the following first:
+- drive out integrations with news sites and get actual text processing in place
+- work out a basic first visual user experience
