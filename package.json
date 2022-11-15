@@ -24,7 +24,7 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
-    "copy-webpack-plugin": "^4.2.0",
+    "copy-webpack-plugin": "^4.6.0",
     "jest": "^21.2.1",
     "json-loader": "^0.5.7",
     "standard": "^10.0.3",
